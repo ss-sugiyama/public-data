@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*
+ * cmn_layout.css
+ *
+ * 外部CSS
+ *　@import url("外部URI");
+ */
+
+/*////////////////////////////////////////////////////
+
+	base style
+
+////////////////////////////////////////////////////*/
+
+/* !Reseting
+---------------------------------------------------------- */
+body {
+	font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic","メイリオ", Meiryo, Osaka, Arial, Helvetica, Verdana, sans-serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;
+	-webkit-text-size-adjust: none;
+	line-height: 1.5;
+	color: #000;
+	/*background: #eee;*/
+	background:#fff;
+}
+
+body, div, pre, p, blockquote, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, th, td
+{ margin: 0; padding: 0;}
+input, textarea
+{ margin: 0; font-size: 100%;}
+label
+{ cursor: pointer;}
+table
+{ border-collapse: collapse; border-spacing: 0; font-size: 100%;}
+fieldset, img
+{ border: 0;}
+img
+{ vertical-align: top;}
+address, caption, cite, code, dfn, em, th, var
+{ font-style: normal; font-weight: normal;}
+ol, ul
+{ list-style: none;}
+caption, th
+{ text-align: left;}
+h1, h2, h3, h4, h5, h6
+{ font-size: 100%; font-weight: normal;}
+q:after, q:before
+{ content:'';}
+abbr, acronym
+{ border: 0;}
+
+/* !Base Fonts -------------------------------------------------------------- */
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {}
+a:hover,
+a:active,
+a:focus { color: #f00;}
+
+/* !Reset Module
+---------------------------------------------------------- */
+.reset div, .reset dl, .reset dt, .reset dd, .reset ul, .reset ol, .reset li, .reset h1, .reset h2, .reset h3, .reset h4, .reset h5, .reset h6,
+.reset pre, .reset form, .reset fieldset, .reset p, .reset blockquote, .reset th, .reset td
+{ margin: 0; padding: 0;}
+.reset input, .reset textarea
+{ margin: 0; font-size: 100%;}
+.reset table
+{ border-collapse: collapse; border-spacing: 0; font-size: 100%;}
+.reset fieldset, .reset img, .reset abbr, .reset acronym
+{ border: 0;}
+.reset address, .reset caption, .reset cite, .reset code, .reset dfn, .reset em, .reset th, .reset var
+{ font-style: normal; font-weight: normal;}
+.reset ol, .reset ul
+{ list-style: none;}
+.reset caption, .reset th
+{ text-align: left;}
+.reset h1, .reset h2, .reset h3, .reset h4, .reset h5, .reset h6
+{ font-size: 100%; font-weight: normal;}
+.reset a, .reset input
+{ /* outline: none; */ }
+.reset q:after, .reset q:before
+{ content:'';}
+
+/* !Layout
+---------------------------------------------------------- */
+html { overflow-y: scroll;}
+body { text-align: center; }
+div#gloval-header{ width:920px; margin:0 auto; }
+/* !print style
+---------------------------------------------------------- */
+@media print {
+	html,
+	html body { *zoom: 0.65;}
+}
+
+/* !header
+---------------------------------------------------------- */
+header h1{
+
+}
+
+header nav ul{
+overflow:hidden;
+}
+
+header nav ul li{
+border:1px solid #ccc;
+float:left;
+}
+
+header nav ul li a{
+display:block;
+width:80px;
+font-size: 117%;
+padding:10px 20px;
+}
+
+header nav ul li a:hover{
+background:#ff9933;
+color:#fff;
+}
