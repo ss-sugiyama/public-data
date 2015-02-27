@@ -38,7 +38,7 @@
 <body>
 <div id="gloval-header">
 <header>
-<h1><?=$title?></h1>
+<h1>テストページ</h1>
 <nav>
 <ul>
 	<li><a href="">プログラム</a></li>
